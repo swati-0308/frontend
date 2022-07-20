@@ -2,8 +2,8 @@ import "../src/styles/style.css";
 import React, { useState } from "react";
 import { useCreateEmployeeMutation } from "./services/EmployeeService";
 import { useNavigate } from "react-router-dom";
-
-
+import logo from "./assets/logo.png"
+import list from "./assets/List.png"
 
 const CreateEmployee = () => {
   const [createEmployee, result] = useCreateEmployeeMutation();
@@ -32,11 +32,11 @@ const CreateEmployee = () => {
     <>
       <div className="sidenav">
         <div>
-          <img src="./assets/logo.png" alt="keyvalue" />
+          <img src={logo} alt="keyvalue" />
         </div>
         <div className="left">
             <div className="circle">
-                <img src="./assets/List.png" id="emplistpic" alt="list"/>
+                <img src={list} id="emplistpic" alt="list"/>
             </div>
             <p className="para-left">Employee List</p>
         </div>

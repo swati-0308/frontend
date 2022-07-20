@@ -2,6 +2,8 @@ import InputField from "./components/inputField";
 import Button from "./components/Button";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import logo from "./assets/logo.png"
+import sidepic from "./assets/sidepicture.png"
 import './styles/style.css'
 const Login=()=>{
         const navigate = useNavigate();                     
@@ -28,11 +30,11 @@ const Login=()=>{
     
         return (
             <> 
-                 <img id="sidepic" src="../assets/sidepicture.png" alt="keyvalue"  />
+                 <img id="sidepic" src={sidepic} alt="keyvalue"  />
                
                 <div className = "userloginbox">
                     <div>
-                    <img src="../assets/logo.png" alt="keyvalue"/>
+                    <img src={logo}alt="keyvalue"/>
                     </div>
                     <InputField label='Username' onChange={onChangeUsername}/>
                     <InputField label='Password' onChange={onChangePassword}/>

@@ -76,16 +76,6 @@ p{
     width:1000px;
   }
 
-  /* .card2{
-    margin-left:-1px;
-    padding: 7px;
-    border-radius: 10px;
-    box-shadow: 4px 4px 4px 4px rgba(32, 18, 18, 0.2);
-    transition: 0.3s;
-    margin-right: 10px;
-    margin-top: 50px;
-  } */
-
 #formsession{
     margin-left:300px;
     padding: 20px;
@@ -113,13 +103,19 @@ p{
     padding: 2px 37px;
     background-color: #EAF9FF;
     box-shadow: 1px 2px 3px 0px #EAF9FF;
-    font: normal normal normal 20px/27px Nunito Sans;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+      'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+      'Helvetica Neue', sans-serif;
     border: 10px;
-    border-radius: 30px;
+    border-radius: 50px;
     border-right: 10px;
     color: white;
     cursor: pointer;
-    width:300px;}
+    height:30px;
+    width:300px;
+    position: absolute;
+    top: 163px;}
+
 
 input{
     margin-top: 10px;
@@ -272,12 +268,12 @@ div{
 
   .enadd{
     margin-left:-20px;
-    margin-top:-10px;
+    margin-top:-30px;
   }
 
   .eid{
     margin-left:200px;
-    margin-top:-220px;
+    margin-top:-230px;
   }
 
   .role{
@@ -296,11 +292,7 @@ div{
   }
 
   .jd{
-    margin-left:930px;
-    margin-top:-130px;
-  }
-  .pwd{
-    margin-left:1060px;
+    margin-left:950px;
     margin-top:-130px;
   }
 
@@ -314,4 +306,40 @@ div{
 
   #filter{
     margin-left:1300px;
+  }
+
+  #status{
+      color:black;
+      margin-left:10px;
+      margin-top: -3px;
+      width:80px;
+      text-align:center;
+       border:0px;
+       height:40px;
+       border-radius:30px;
+       font: "normal normal normal 20px/27px Nunito Sans";
+       background-color: #EAF9FF;
+  }
+  .Active{
+    background-color:#D3F4BE;
+    border-radius:70%;
+    font-size: small;
+  }
+  .Inactive{
+    background-color:#FFBFBF;
+    border-radius:70%;
+    font-size: small;
+  }
+  .Probation{
+    background-color:#F5ECB8;
+    border-radius:50%;
+    font-size: small;
+  }
+  #hr{
+    width:1100;
+    opacity:1;
+    border-width:-1;
+    color:"gray";
+    background-color:"gray";
+    margin-top: 20px;
   }

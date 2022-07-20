@@ -2,6 +2,8 @@ import "../src/styles/style.css";
 import React, { useState ,useEffect} from "react";
 import { useGetEmployeeByIdQuery, useUpdateEmployeeByIdMutation } from "./services/EmployeeService";
 import { useNavigate, useParams } from "react-router-dom";
+import logo from "./assets/logo.png"
+import list from "./assets/List.png"
 
 const UpdateEmployee = () => {
   const [updateEmployeeById, result] = useUpdateEmployeeByIdMutation();
@@ -54,17 +56,17 @@ const UpdateEmployee = () => {
     <>
       <div className="sidenav">
         <div>
-          <img src="./assets/logo.png" alt="keyvalue" />
+          <img src={logo} alt="keyvalue" />
         </div>
         <div class="left">
             <div class="circle">
-                <img src="./assets/List.png" id="emplistpic" alt="list"/>
+                <img src={list} id="emplistpic" alt="list"/>
             </div>
             <p class="para-left">Employee List</p>
         </div>
       </div>
       <div>
-        <h1 id="employeelist_heading">Update Employee</h1>
+        <h1 style={{marginTop:65,marginLeft:300,width:1450}}id="employeelist_heading">Update Employee</h1>
       </div>
       <div>
         <form name="Employeeform">

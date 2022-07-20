@@ -3,6 +3,9 @@ import { Navigate, useNavigate } from "react-router-dom";
 import React, { useState } from "react";
 import { useGetEmployeeByIdQuery} from "./services/EmployeeService"
 import { useParams } from "react-router-dom";
+import logo from "./assets/logo.png"
+import list from "./assets/List.png"
+
 const EmployeeDetails = () => {
   const navigate = useNavigate();
   let { id } = useParams();
@@ -13,23 +16,27 @@ const EmployeeDetails = () => {
        
       <div className="sidenav">
         <div>
-          <img src="assets/logo.png" alt="keyvalue" />
+          <img src={logo} alt="keyvalue" />
         </div>
-        <div class="left">
-            <div class="circle">
-                <img src="./assets/List.png" id="emplistpic" alt="list"/>
+        <div className="left">
+            <div className="circle">
+                <img src={list} id="emplistpic" alt="list"/>
             </div>
-            <p class="para-left">Employee List</p>
+            <p className="para-left">Employee List</p>
         </div>
       </div>
       <div>
-        <h1 id="employeelist_heading">Employee Details</h1>
+        <h1 style={{marginTop:65}}id="employeelist_heading">Employee Details
+        <button type="button" id="status" style={
+          {color:"black",
+          marginLeft:1200,
+          position:"absolute",
+          top:120}} 
+          onClick={() => navigate(`/update/${id}`)
+              }>Edit</button></h1>
        
-        <button type="button" id="createemployeebtn" style={{color:"black"}} onClick={() => navigate(`/update/${id}`)
-              }>Edit</button>
-       
-        </div>
-      <div id="formsession" style={{height:230, marginTop:-10}}>
+      </div>
+      <div id="formsession" style={{height:230,width:1200, marginTop:20}}>
           
       {error ? (
               <>Oh no, there was an error</>
@@ -40,6 +47,7 @@ const EmployeeDetails = () => {
                   <div className="enadd">
                   <label>Employee Name</label><br/>
                   <label>{data.data.name}</label><br/><br/>
+                  <hr style={{width:1100,opacity:1,borderWidth:-1,color:"gray",backgroundColor:"gray",marginTop:0}}></hr>
                   <label>Employee Address</label><br/>
                   <label>{data.data.address.address}</label><br/><br/>
                   </div>
@@ -63,10 +71,6 @@ const EmployeeDetails = () => {
                   <label>Joining Date</label><br/>
                   <label>{data.data.jdate}</label><br/><br/>
                   </div>
-                  <div className="pwd">
-                  <label>Password</label><br/>
-                  <label>{data.data.password}</label><br/><br/>
-                  </div>
 
                 </div>
              
@@ -77,3 +81,5 @@ const EmployeeDetails = () => {
 
 }
 export default EmployeeDetails;
+
+

@@ -2,6 +2,8 @@ import "../src/styles/style.css"
 import { useNavigate } from "react-router-dom";
 import React, { useState } from "react";
 import { useGetAllEmployeesQuery,useDeleteEmployeeByIdMutation } from "./services/EmployeeService"
+import logo from "./assets/logo.png"
+import list from "./assets/List.png"
 import {MdOutlineDelete,MdOutlineEdit} from "react-icons/md";
 const EmployeeList = () => {
   const { data, error, isLoading } = useGetAllEmployeesQuery();
@@ -13,20 +15,20 @@ const EmployeeList = () => {
     <>
       <div className="sidenav">
         <div>
-          <img src="assets/logo.png" alt="keyvalue" />
+          <img src={logo} alt="keyvalue" />
         </div>
         <div className="left">
             <div className="circle">
-                <img src="./assets/List.png" id="emplistpic" alt="list"/>
+                <img src={list} id="emplistpic" alt="list"/>
             </div>
             <p className="para-left">Employee List</p>
         </div>
       </div>
       <div>
         <h1 id="employeelist_heading">Employee List</h1>
-        <h4 id="filter" style={{marginTop:-50}}>Filter By
-        <button id="createemployeebtn" style={{color:"black",marginLeft:150,marginTop:-400}} onClick={() => navigate("/create")}>
-         Create Employee
+        <h4 id="filter" style={{marginTop:-60,marginLeft:1200,fontSize:17}}>Filter By
+        <button id="status">Status</button> 
+        <button id="createemployeebtn" style={{color:"black",marginLeft:100,marginTop:-40}} onClick={() => navigate("/create")}>Create Employee
         </button></h4>
       </div>
       <div>
@@ -56,7 +58,7 @@ const EmployeeList = () => {
                     <td>{item.department.name}</td>
                     <td>{item.role}</td>
                     <td>{item.experience}</td>
-                    <td>{item.status}</td>
+                    <td className={item.status}>{item.status}</td>
                     <td><MdOutlineDelete className="delete" onClick={() => {
                      deleteEmployeeById(item.id);
                     }}/></td>
