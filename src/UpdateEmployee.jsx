@@ -6,9 +6,7 @@ import { useNavigate, useParams } from "react-router-dom";
 const UpdateEmployee = () => {
   const [updateEmployeeById, result] = useUpdateEmployeeByIdMutation();
   let {id} =useParams();
-  //console.log(id)
   const {data,error,isLoading} =useGetEmployeeByIdQuery(id)
-  //console.log(data);
   const navigate=useNavigate();
   
   const [formvalues, setValues] = useState({

@@ -1,6 +1,3 @@
-// import Button from "./button";
-// import InputField from "./inputField";
-// import InputSelect from "./inputSelect";
 import "../src/styles/style.css";
 import React, { useState } from "react";
 import { useCreateEmployeeMutation } from "./services/EmployeeService";
@@ -10,7 +7,6 @@ import { useNavigate } from "react-router-dom";
 
 const CreateEmployee = () => {
   const [createEmployee, result] = useCreateEmployeeMutation();
-  //console.log(result);
   const navigate=useNavigate();
   const [formvalues, setValues] = useState({
     name: "",
@@ -29,7 +25,6 @@ const CreateEmployee = () => {
     };
   };
   function submitfn() {
-    //console.log(formvalues);
     createEmployee(formvalues);
     navigate("/list");
   }

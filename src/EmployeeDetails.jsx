@@ -71,37 +71,6 @@ const EmployeeDetails = () => {
                 </div>
              
             ) : null}
-       
-        {/* <table id="employeelisttable">
-          <tbody>
-            <tr id="listheadings">
-              <th>Employee Name</th>
-              <th>Employee Id</th>
-              <th>Role</th>
-              <th>Status</th>
-              <th>Experience</th>
-              <th>Joining Date</th>
-              <th>Password</th>
-            </tr>
-            
-            {error ? (
-              <>Oh no, there was an error</>
-            ) : isLoading ? (
-              <>Loading...</>
-            ) : data ? (
-                 <tr className="employeelistcard">
-                    <td>{data.data.name}</td>
-                    <td>{data.data.id}</td> 
-                    <td>{data.data.role}</td>
-                    <td>{data.data.status}</td>
-                    <td>{data.data.experience}</td>
-                    <td>{data.data.jdate}</td>
-                    <td>{data.data.password}</td>
-                  </tr>
-             
-            ) : null}
-          </tbody>
-        </table> */}
       </div>
     </>
   ); 

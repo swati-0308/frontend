@@ -8,76 +8,6 @@ const EmployeeList = () => {
   console.log(data);
   const navigate = useNavigate();
   const [deleteEmployeeById, result] = useDeleteEmployeeByIdMutation();
-//   function submitfn() {
-//     //console.log(formvalues);
-   
-//   }
-
-  const [emplist, updateList] = useState([
-    // {
-    //   name: "Anandu",
-    //   address: "abc",
-    //   id: "1",
-    //   email: "anandu1998@gmail.com",
-    //   joiningdate: "05/06/2022",
-    //   experience: "none",
-    //   role: "Trainee",
-    //   status: "single",
-    // },
-    // {
-    //   name: "Risal",
-    //   address: "abcd",
-    //   id: "2",
-    //   email: "risal@gmail.com",
-    //   joiningdate: "05/06/2022",
-    //   experience: "none",
-    //   role: "Trainee",
-    //   status: "single",
-    // },
-    // {
-    //   name: "Austin",
-    //   address: "abcde",
-    //   id: "1",
-    //   email: "austin@gmail.com",
-    //   joiningdate: "05/06/2022",
-    //   experience: "none",
-    //   role: "Trainee",
-    //   status: "single",
-    // },
-  ]);
-
-  const tempemplist = [
-    // {
-    //   name: "Anandu",
-    //   address: "abc",
-    //   id: "1",
-    //   email: "anandu1998@gmail.com",
-    //   joiningdate: "05/06/2022",
-    //   experience: "none",
-    //   role: "Trainee",
-    //   status: "single",
-    // },
-    // {
-    //   name: "Risal",
-    //   address: "abcd",
-    //   id: "2",
-    //   email: "risal@gmail.com",
-    //   joiningdate: "05/06/2022",
-    //   experience: "none",
-    //   role: "Trainee",
-    //   status: "single",
-    // },
-    // {
-    //   name: "Austin",
-    //   address: "abcde",
-    //   id: "1",
-    //   email: "austin@gmail.com",
-    //   joiningdate: "05/06/2022",
-    //   experience: "none",
-    //   role: "Trainee",
-    //   status: "single",
-    // },
-  ];
 
   return (
     <>
@@ -130,14 +60,6 @@ const EmployeeList = () => {
                     <td><MdOutlineDelete className="delete" onClick={() => {
                      deleteEmployeeById(item.id);
                     }}/></td>
-                    {/* <td><button onClick={() => {
-                     deleteEmployeeById(item.id);
-                    }}>Delete</button>
-                    <button onClick={() => {
-                     navigate(`/details/${item.id}`)
-                    }}>More</button>
-                        
-                        </td>  */}
                     <td><MdOutlineEdit className="edit" onClick={() => {
                     navigate(`/details/${item.id}`)
                     }}/></td>
