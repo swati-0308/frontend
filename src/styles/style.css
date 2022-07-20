@@ -1,0 +1,317 @@
+*{
+    box-sizing: border-box;
+}
+.sidenav {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    
+    margin-top:-18px;
+    left: 0;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    
+  }
+
+  .left
+{
+    background-color: #03AEEE;
+    border-radius: 50px 0px 0px 50px;
+    margin:0px;
+    width: 280px;
+    height:50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    
+}
+
+.para-left{
+    text-align: center;
+    color:white;
+    font-family: "sans-serif";
+    margin-bottom: 15px;
+    padding:5px;
+
+}
+
+.circle{
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left:-5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    
+
+}
+#emplistpic {  
+    width:22px;
+    height:22px;
+    vertical-align: middle;
+    background-color:white;
+    border-radius: 50%;
+    margin-left:-10px;
+    }  
+main {
+    
+    margin-left: 300px;
+    
+
+}
+p{
+    display: inline; 
+    color: white
+}
+.employeelistcard{
+    margin-left:1000px;
+    margin-top:-10px;
+    height:60px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px 4px rgba(32, 18, 18, 0.2);
+    transition: 0.3s;
+    margin-right: 10px;
+    width:1000px;
+  }
+
+  /* .card2{
+    margin-left:-1px;
+    padding: 7px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px 4px rgba(32, 18, 18, 0.2);
+    transition: 0.3s;
+    margin-right: 10px;
+    margin-top: 50px;
+  } */
+
+#formsession{
+    margin-left:300px;
+    padding: 20px;
+    display:flex;
+    flex-wrap:wrap;
+    background-color: #ffffff;
+    margin-top:50px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px 4px rgba(32, 18, 18, 0.2);
+    transition: 0.3s;
+    height: 480px;
+    
+}
+
+.userloginbox{
+    margin-left:1000px;
+    margin-top:-700px;
+}
+
+#createemployeebtn{
+    margin-top: -2000px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 1450px;
+    padding: 2px 37px;
+    background-color: #EAF9FF;
+    box-shadow: 1px 2px 3px 0px #EAF9FF;
+    font: normal normal normal 20px/27px Nunito Sans;
+    border: 10px;
+    border-radius: 30px;
+    border-right: 10px;
+    color: white;
+    cursor: pointer;
+    width:300px;}
+
+input{
+    margin-top: 10px;
+    border-radius:4px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+      'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+      'Helvetica Neue', sans-serif;
+      background-color:rgba(255, 255, 255, 0.664);
+  
+    display: block;
+    padding: 7px;
+    width: 300px;
+    
+}
+label{
+    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+      'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+      'Helvetica Neue', sans-serif;
+  
+    display: block;
+}
+select{
+    margin-top: 10px;
+    border-radius:4px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+      'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+      'Helvetica Neue', sans-serif;
+      background-color:rgba(255, 255, 255, 0.664);
+  
+    display: block;
+    padding: 7px;
+    width: 300px;
+
+}
+div{
+    padding: 20px;
+    margin: bottom 20px;
+
+}
+#buttonsession{
+    margin-top: -50px;
+    margin-right: 300px;
+    margin-bottom: 400px;
+    margin-left: 20px;
+    padding: 4px 37px;
+    font-size: 17px;
+    border: 10px;
+    border-radius: 4px;
+    border-right: 10px;
+    cursor: pointer;
+  }
+
+  #cancelbutton{
+
+    margin-top: -50px;
+    margin-right: 300px;
+    margin-bottom: 400px;
+    margin-left: -400px;
+    padding: 4px 37px;
+    font-size: 17px;
+    border: 10px;
+    border-radius: 4px;
+    border-right: 10px;
+    color: #A9A9A9;
+    cursor: pointer;
+    width:150px;
+    height:32px;
+  }
+
+  #createbutton{
+    margin-top: -1000px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: -15px;
+    padding: 5px 37px;
+    background-color: #03AEEE;
+    font-size: 17px;
+    border: 10px;
+    border-radius: 4px;
+    border-right: 10px;
+    color: white;
+    cursor: pointer;
+    width:150px;}
+  
+#sidepic{
+    height:100vh;
+    margin:-20px;
+}
+  
+.avatar {
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;
+    background-color:white;
+    border-radius: 50%;
+    
+  }
+
+  #loginbtn{
+
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 1040px;
+    padding: 5px 37px;
+    background-color: rgb(13, 166, 226);
+    box-shadow: 1px 2px 3px 0px rgb(13 166 226);
+    font-size: 17px;
+    border: 10px;
+    border-radius: 4px;
+    border-right: 10px;
+    color: white;
+    cursor: pointer;
+    width:300px;
+  }
+
+  #employeelist_heading{
+    margin-left:280px;
+    margin-top:65px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px 4px rgba(32, 18, 18, 0.2);
+    transition: 0.3s;
+    height:60px;
+    width:1500px;
+    background-color: #ffffff;
+    padding:20px;
+    font: normal normal bold 24px/32px Nunito Sans;
+
+  }
+
+  #employeelisttable{
+    margin-left:280px;
+    width:1500px;
+    height:30px;
+    padding:0px;
+  }
+
+  #employeelisttable>th,td{
+        padding: 0px;
+        text-align: center;
+  }
+
+  #listheadings {
+    background-color: #EAF9FF;
+    color: black;
+    padding:10px;
+    height:50px;
+  }
+
+  .enadd{
+    margin-left:-20px;
+    margin-top:-10px;
+  }
+
+  .eid{
+    margin-left:200px;
+    margin-top:-220px;
+  }
+
+  .role{
+    margin-left:550px;
+    margin-top:-130px;
+  }
+
+  .status{
+    margin-left:700px;
+    margin-top:-130px;
+  }
+
+  .exp{
+    margin-left:820px;
+    margin-top:-130px;
+  }
+
+  .jd{
+    margin-left:930px;
+    margin-top:-130px;
+  }
+  .pwd{
+    margin-left:1060px;
+    margin-top:-130px;
+  }
+
+  .delete{
+    color:red;
+  }
+
+  .edit{
+    color:#03AEEE;
+  }
+
+  #filter{
+    margin-left:1300px;
+  }
